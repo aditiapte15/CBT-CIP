@@ -11,7 +11,7 @@ class ContactMaster:
             self.contacts[person_name] = phone_number
             print(f"Contact {person_name} added successfully.")
 
-    # Method to delete a contact
+   
     def delete_contact(self, person_name):
         if person_name in self.contacts:
             del self.contacts[person_name]
@@ -19,14 +19,14 @@ class ContactMaster:
         else:
             print(f"Contact {person_name} not found.")
 
-    # Method to search for a contact
+    
     def find_contact(self, person_name):
         if person_name in self.contacts:
             print(f"Contact found: {person_name} - {self.contacts[person_name]}")
         else:
             print(f"Contact {person_name} not found.")
 
-    # Method to display all contacts
+    
     def show_contacts(self):
         if self.contacts:
             print("Contact List:")
@@ -35,7 +35,6 @@ class ContactMaster:
         else:
             print("No contacts available.")
 
-# Main application loop
 def main():
     cm = ContactMaster()
     
